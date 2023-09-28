@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="products.css" />
+        <link rel="shortcut icon" href="src/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <section class="logo">
+                <img src="./src/logo.png" alt="logo" />
+                <a href="./index.html">COFFEE?</a>
+            </section>
+            <section class="nav">
+                <a href=index.html>HOME</a>
+                <a href="">SHOP</a>
+                <a href="">CONTACT</a>
+            </section>
+            <span>COFFEE</span>
+        </header>
+        <div id="cnt-main">
+            <section></section>
+            <div
+                onclick="window.location.href = window.location.href.slice(0, window.location.href.length - 12) + 'order.html?type=cold'"
+            >
+                <h2>COLD COFFEE</h2>
+                <img src="./src/coffee-cup.png" alt="Cold coffee" />
+                <p>Nitro Cold Brew | Iced Coffee Iced | Caffè Mocha<br />Blonde Vanilla Latte</p>
+            </div>
+            <div
+                onclick="window.location.href = window.location.href.slice(0, window.location.href.length - 12) + 'order.html?type=hot'"
+            >
+                <h2>HOT COFFEE</h2>
+                <img src="./src/coffee-cup.png" alt="Hot coffee" />
+                <p>Caffè Americano | Cappuccino | Caffè Misto<br />Dark Chocolate Mocha</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+#cnt-main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: black;
+}
+
+#cnt-main section {
+    height: 50%;
+    width: 2px;
+    background-color: #ffffff80;
+    position: absolute;
+    top: 25%;
+    left: calc(50% - 1px);
+}
+
+#cnt-main div {
+    padding-top: 10vh;
+    width: 50%;
+    background-image: radial-gradient(#694910ed, #230202);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cnt-main div h2 {
+    font-size: 170%;
+    padding: 40px;
+    text-align: center;
+}
+
+#cnt-main div img {
+    display: block;
+    width: 40%;
+    margin: 0px auto;
+    animation: cb1 2s ease-in-out 0s infinite alternate forwards paused;
+}
+
+#cnt-main div:hover img {
+    animation-play-state: running;
+}
+
+#cnt-main div p {
+    font-size: 150%;
+    text-align: center;
+    padding: 40px;
+}
+
+@keyframes cb1 {
+    0% {
+        translate: 0px 10px;
+    }
+    100% {
+        translate: 0px -10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #cnt-main {
+        flex-direction: column;
+    }
+
+    #cnt-main section {
+        display: none;
+    }
+
+    #cnt-main div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+#cnt-main {
+    flex-direction: row;
+    height: 100vh;
+    background-color: black;
+    background-image: radial-gradient(at 50% 85%, #694910ed, #230202);
+    font-size: min(2.5vh, 2vw);
+}
+
+#cnt-main > h2 {
+    display: block;
+    width: fit-content;
+    font-size: 170%;
+    margin: 18vh auto;
+    text-transform: uppercase;
+}
+
+#cnt-main > h2::after {
+    content: "";
+    position: relative;
+    top: 10px;
+    left: 15%;
+    display: block;
+    height: 3px;
+    width: 70%;
+    background-color: white;
+}
+
+#cnt-main img.arrow {
+    position: absolute;
+    top: calc(50% - 13px);
+    height: 50px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#cnt-main img.arrow:nth-child(1) {
+    right: unset;
+    left: 10px;
+    transform: rotateY(180deg);
+}
+
+#cnt-main > p {
+    width: fit-content;
+    text-align: center;
+    padding-top: 80px;
+    margin: auto;
+}
+
+#tray,
+#coffee {
+    position: absolute;
+    height: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+#coffee {
+    height: 80%;
+}
+
+#sizes {
+    position: absolute;
+    top: 33%;
+    left: 75%;
+}
+
+#sizes h2 {
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#sizes img {
+    height: 15vh;
+}
+
+#in-nu {
+    position: absolute;
+    left: 10%;
+    max-width: max(30%, 200px);
+    bottom: 20%;
+    text-transform: uppercase;
+}
+
+#in-nu h2 {
+    padding-top: 1.2em;
+    font-size: 160%;
+    line-height: 150%;
+}
+
+#in-nu p {
+    position: relative;
+    font-size: 130%;
+    left: 50px;
+    line-height: 130%;
+}
+
+#odr {
+    position: absolute;
+    left: 75%;
+    bottom: 22%;
+    font-size: 130%;
+}
+
+#odr img {
+    padding-top: 10px;
+    height: 8vh;
+}

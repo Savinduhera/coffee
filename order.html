@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="order.css" />
+        <script src="./coffee.js"></script>
+        <link rel="shortcut icon" href="src/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <section class="logo"><img src="./src/logo.png" alt="logo" /><a href="./index.html">COFFEE?</a></section>
+            <section class="nav">
+                <a href="index.html">HOME</a>
+                <a href="./product.html">SHOP</a>
+                <a href="">CONTACT</a>
+            </section>
+            <a href="./product.html">COFFEE</a>
+        </header>
+        <div id="cnt-main">
+            <img class="arrow" onclick="switchCoffee('l')" src="./src/product/arrow.svg" alt="<" />
+            <img class="arrow" onclick="switchCoffee('r')" src="./src/product/arrow.svg" alt=">" />
+            <h2>hot coffee - <span>Caffè Misto</span></h2>
+            <img id="tray" src="./src/product/ellipse.png" alt="Tray" />
+            <img id="coffee" src="./src/product/coffee/NitroColdBrew.png" alt="Coffe" />
+            <section id="in-nu">
+                <h2>Ingredients:</h2>
+                <p>Brewed Coffee<br />Milk</p>
+                <h2>Nutrition:</h2>
+                <p>AAA<br />BBB<br />CCC<br />DDD<br />EEE</p>
+            </section>
+            <section id="sizes">
+                <h2>Size options:</h2>
+                <img src="./src/product/size-options.png" alt="Sizes" />
+            </section>
+            <section id="odr">
+                <h1>PRICE: <span>0.00</span></h1>
+                <img src="./src/product/recive-me.png" alt="RECIVE ME" />
+            </section>
+        </div>
+        <script src="./order.js"></script>
+    </body>
+</html>

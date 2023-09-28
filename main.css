@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "League Spartan", sans-serif;
+    color: #ffffff;
+}
+
+:root {
+    --header-height: 10vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #230202;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f2308;
+    border-radius: 5px;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 40px);
+    overflow-x: hidden;
+    height: var(--header-height);
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 30;
+    font-size: max(2.8vh, 1.5vw);
+    /* background-color: #ffffff40; */
+}
+
+header > section {
+    box-sizing: border-box;
+    font-size: 100%;
+    height: var(--header-height);
+    padding: 5px;
+}
+
+header section img {
+    height: 100%;
+    display: block;
+}
+
+header section.logo {
+    display: flex;
+}
+
+header section.logo a {
+    margin: auto;
+    font-family: "Lemonada", cursive;
+    text-decoration: none;
+}
+
+header section.nav a {
+    display: inline-block;
+    line-height: calc(var(--header-height) - 30px);
+    padding: 15px;
+    text-decoration: none;
+}
+
+header > a {
+    line-height: calc(var(--header-height) - 30px);
+    font-size: 130%;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/* cnt */
+#cnt-main {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+#lnd {
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: 150%;
+    background-image: radial-gradient(at 75%, #694910ed, #230202);
+}
+
+#lnd section.text {
+    position: absolute;
+    top: calc(28vh - 5vw);
+    padding: 50px;
+    font-size: min(5vw, 100px);
+}
+
+#lnd section.text > * {
+    line-height: 100%;
+    font-family: "Lemonada", cursive;
+    text-shadow: 0px 5px 4px black;
+}
+
+#lnd section.text h3 {
+    font-size: 122%;
+    line-height: 150%;
+}
+
+#lnd section.text h1 {
+    font-size: 200%;
+}
+
+#lnd section.text h6 {
+    font-size: 50%;
+}
+
+#lnd section.text img.recive-me {
+    padding: 3vh 0px;
+    height: auto;
+    width: 11vw;
+}
+
+#lnd section:has(img.cup) {
+    position: relative;
+    margin-top: min(25vw, calc((100vh - 40vw) / 2));
+    float: right;
+    right: 8vh;
+    height: fit-content;
+    width: min(40vw, 55vh);
+}
+
+#lnd section img.cup {
+    width: 100%;
+    animation: cb1 7s ease 0s infinite alternate;
+}
+
+#lnd section img.bean {
+    position: absolute;
+    height: 10%;
+    animation: cb1 0s ease 0s infinite alternate;
+}
+
+#lnd section img.bean:nth-last-child(1) {
+    top: 39%;
+    left: -11%;
+    transform: rotate(30deg);
+    animation-duration: 3s;
+}
+
+#lnd section img.bean:nth-last-child(2) {
+    top: 25%;
+    right: 7%;
+    transform: rotate(63deg) scale(112%);
+    animation-duration: 4s;
+}
+
+#lnd section img.bean:nth-last-child(3) {
+    bottom: 18%;
+    left: 17%;
+    transform: scale(1.5);
+    animation-duration: 5s;
+}
+
+#lnd section img.bean:nth-last-child(4) {
+    bottom: 17%;
+    right: -6%;
+    transform: rotate(40deg) scale(3.5);
+    animation-duration: 6s;
+}
+
+@keyframes cb1 {
+    0% {
+        translate: 0px 10px;
+    }
+    100% {
+        translate: 0px -10px;
+    }
+}
+
+#top-sales {
+    position: relative;
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #1c0c04, #462309e6);
+}
+
+#top-sales h1 {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+}
+
+#top-sales img {
+    margin: 10px;
+    height: 75%;
+    border-radius: 15px;
+}
+
+#banners div {
+    display: flex;
+    justify-content: center;
+    height: min(300px, 40vh);
+    padding: 20px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#banners div:nth-child(1) {
+    background-color: #dd911e;
+}
+
+#banners div:nth-child(2) {
+    background-color: #1f3914;
+}
+
+#banners div section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15%;
+    max-width: min(50%, 500px);
+    height: 100%;
+    padding: 20px;
+    padding-right: min(230px, 33vh);
+}
+
+#banners div section > * {
+    font-size: 200%;
+    padding: 10px;
+    text-align: center;
+}
+
+#banners div img {
+    padding: 20px;
+    max-width: 50%;
+    height: 90%;
+    right: 0;
+    position: absolute;
+    object-fit: contain;
+}
+
+/* footer */
+footer {
+    height: min-content;
+    width: 100vw;
+    background-image: url("./src/footer-ellipse.png"),
+        linear-gradient(94deg, #361506 0%, #431d0c 62.99%, #262626 96.75%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+footer > section {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    height: 50px;
+}
+
+footer > section > img {
+    float: left;
+    height: 100%;
+}
+
+footer > section span {
+    font-family: "Lemonada", cursive;
+    font-size: 30px;
+    float: right;
+    line-height: 50px;
+    padding-inline: 10px;
+    display: block;
+    height: fit-content;
+}
+
+footer div {
+    height: min-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > div > section {
+    height: fit-content;
+}
+
+footer div img {
+    height: 25vh;
+    align-self: baseline;
+    padding: 0px 10px;
+}
+
+footer div section {
+    flex-shrink: 0;
+}
+
+footer div section * {
+    font-weight: 300;
+    line-height: 130%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
